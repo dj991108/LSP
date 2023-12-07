@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #1b0e74;
+    color: white;
+    padding: 15px 0;
+    width: 84%;              /* header의 가로 폭을 body의 container와 동일하게 설정 */
+    margin: 0 auto;          /* 중앙 정렬 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 선택적: 통일된 디자인을 위한 그림자 효과 */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(184, 205, 247);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container > div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 3px;
+}
+
+.environment {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.environment > div {
+    flex-basis: 40%;
+    padding: 10px;
+    border-right: 1px solid #d8d8d8; /* 세로선 추가 */
+}
+
+.environment > div:last-child {
+    border-right: none; /* 마지막 섹션의 세로선 제거 */
+}
+
+#posture-status {
+    font-size: 1.25em; /* 글씨 크기 증가 */
+    font-weight: bold; /* 굵게 */
+}
+

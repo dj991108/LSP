@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/> <!-- 문자 인코딩 설정 -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/> <!-- 반응형 웹 디자인을 위한 뷰포트 설정 -->
+    <title>Let’s Study Properly</title> <!-- 웹페이지 제목 -->
+    <link href="/static/style.css" rel="stylesheet"/> <!-- CSS 스타일시트 연결 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 라이브러리 포함 -->
+
+    <script>
+        function displayCurrentDate() {
+            var today = new Date(); // 현재 날짜와 시간 생성
+            var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate(); // 날짜 형식 설정
+            document.getElementById('current-date').innerText = date; // 날짜 표시
+        }
+    </script>
+</head>
+<body onload="displayCurrentDate()"> <!-- 페이지 로드 시 날짜 표시 함수 호출 -->
+    <header>
+        <div class="title">
+            <h1>Let’s Study Properly</h1> <!-- 페이지 제목 -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="study-time">
+            <h2><span id="current-date"></span> 공부 환경</h2> <!-- 현재 날짜와 공부 환경 표시 -->
+        </div>
+
+        <div class="posture">
+            <h2>자세 분석</h2> <!-- 자세 분석 섹션 제목 -->
+            <img id="posture-image" src="" alt="자세 이미지"> <!-- 사용자의 자세를 보여주는 이미지 -->
+            <p id="posture-status">상태 : Loading...</p> <!-- 자세 상태 표시 -->
+        </div>
+
+        <div class="environment">
+            <div class="temperature">
+                <h2>온도</h2> <!-- 온도 섹션 제목 -->
+                <p id="temperature">Loading...</p> <!-- 온도 데이터 표시 -->
+                <p id="temperature-advice">Loading...</p> <!-- 온도 관련 조언 표시 -->
+            </div>
+            <div class="humidity">
+                <h2>습도</h2> <!-- 습도 섹션 제목 -->
+                <p id="humidity">Loading...</p> <!-- 습도 데이터 표시 -->
+                <p id="humidity-advice">Loading...</p> <!-- 습도 관련 조언 표시 -->
+            </div>
+            <div class="light">
+                <h2>조도</h2> <!-- 조도 섹션 제목 -->
+                <p id="light">Loading...</p> <!-- 조도 데이터 표시 -->
+                <p id="light-advice">Loading...</p> <!-- 조도 관련 조언 표시 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/update.js"></script> <!-- 자세와 환경 데이터를 업데이트하는 자바스크립트 파일 연결 -->
+</body>
+</html>
