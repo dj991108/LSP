@@ -15,3 +15,7 @@
 ## ⚙ 하드웨어 구성
 ><p align="center"><img src="https://github.com/dj991108/LSP/assets/90829718/050ac853-b3dd-492f-ac0d-11c2780ace54" alt="하드웨어 구성도" width="600"></p>
 
+<br/>
+
+## 📱 구현 화면
+><p align="center"><img src="https://github.com/dj991108/LSP/assets/90829718/a42b3fb0-4340-405c-a12f-211f08bb5070" alt="구현 화면" width="600"></p>
